@@ -36,7 +36,7 @@ baseHeight = 3
 externalRadius = 30
 internalRadius = 25
 
-earsNumber = 6
+earsNumber = 12
 earsLength = 5
 earsEmptyLength = 3
 earsWidth = 10
@@ -49,5 +49,3 @@ ears = rotate_array(earsNumber,externalRadius)(
 
 brim = based_rim(externalRadius,internalRadius,
 	fullHeight,baseHeight)
-
-print(scad_render(brim + ears))
