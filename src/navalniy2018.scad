@@ -1,15 +1,27 @@
-//Данный модуль строит 3д символ компании (image/symbol.png) 
+//Размеры исходника(Константы)
+navalniy2018_X_SIZE = 552;
+navalniy2018_Y_SIZE = 62;
+navalniy2018_X_TO_Y = 62 / 552;
+
+
+//Данный модуль строит надпись "Навальный 2018" (image/symbol.png)
+//x,y,z - размеры по осям x,y,z (
+//z вычисляется по карте уровней, поэтому реальный z меньше заявленного.
+//) 
+//s - пустое пространство вокруг надписи.
+//bh - высота базы.
 module navalniy2018(x,y,z,s,bh) {
-    symbol_file = "../image/navalniy2.png";
-    symbol_x = 552 + s;
-    symbol_y = 62 + s;
+    file = "../image/navalniy2.png";
+    xsize = navalniy2018_X_SIZE;
+    ysize = navalniy2018_Y_SIZE;
     
-    scale([1/symbol_x*x,1/symbol_y*y,1/100*z])
+    //
     union() {
-    translate([0,0,100])
-    surface(file=symbol_file, invert=true,center=true);
+        scale([1/xsize*x,1/ysize*y,1/100*z])
+            translate([0,0,100])
+                surface(file=file, invert=true,center=true);
     
-    translate([0,0,-bh])cube([symbol_x, symbol_y,bh], center=true);
+    translate([0,0,-bh/2])cube([x + s, y + s, bh], center=true);
         
     }
    // linear_extrude(height = z, center = true, convexity = 10)
@@ -17,4 +29,4 @@ module navalniy2018(x,y,z,s,bh) {
 }
     
 //Демонстрационный код.
-//navalniy2018(552/2,62/2,10,20,1);
+//navalniy2018(150, 150 * navalniy2018_X_TO_Y, 10, 10, 10);
