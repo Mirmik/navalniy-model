@@ -13,7 +13,7 @@ earLength = 20;
 rimHeight=5;
 rimWidth = 3;
 
-scale(1.2)
+scale(1.0)
 union() {
     //Создаём надпись.
     navalniy2018(xf,yf,zf,s,bh);
