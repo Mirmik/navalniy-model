@@ -22,8 +22,8 @@ Repository structure.
 Каталог image содержит изображения, используемые для генерации рельефа.  
 В корневом каталоге репозитория находятся готовые модели в формате stl.  
 
-Feedback: ![vk](https://vk.com/mirkei)  
-Thingiverse: ![thing](http://www.thingiverse.com/thing:2265261)  
+Feedback: [vk](https://vk.com/mirkei)  
+Thingiverse: [thing](http://www.thingiverse.com/thing:2265261)  
 
 Images
 ------
