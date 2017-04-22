@@ -13,6 +13,7 @@ How to modify?
 Скрипты, генерирующие модели представлены в раздаче.   
 Генерация моделей выполняется openscad-скриптами. Для построения моделей используется программа openscad.  
 Документация по openscad общедоступна в сети.
+Модели с надписями строятся на базе png карты высот, так что рендерятся долго...
 
 Repository structure.
 ---------------------
@@ -23,6 +24,8 @@ Repository structure.
 
 Images
 ------
+![](./docs/im8.jpg)
+![](./docs/im11.jpg)
 ![](./docs/im1.jpg)
 ![](./docs/im2.jpg)
 ![](./docs/im3.jpg)
@@ -30,4 +33,8 @@ Images
 ![](./docs/im5.jpg)
 ![](./docs/im6.jpg)
 ![](./docs/im7.jpg)
-![](./docs/im8.jpg)
+![](./docs/im9.jpg)
+![](./docs/im10.jpg)
+
+Feedback: ![vk](https://vk.com/mirkei)
+Thingiverse: ![thing](http://www.thingiverse.com/thing:2265261)

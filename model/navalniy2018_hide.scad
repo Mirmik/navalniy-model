@@ -29,7 +29,7 @@ difference() {
     //Создаём ушки.   
     mirror_copy([0,1,0])
     translate([-xf/2,(yf+s)/2,-bh])
-    linear_array(xf + s - 10, 2) 
+    linear_array(xf + s - 10, 4) 
     rotate([0,0,90])
     hide_ear(2);
 }
